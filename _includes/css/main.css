@@ -109,8 +109,8 @@ header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
 }
-@media only screen and (min-width: 1025px) {
-    
+
+@media only screen and (min-width: 1200px) {
 
 .box div{
     margin: 0px 0;

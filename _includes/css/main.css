@@ -9,6 +9,16 @@ body {
     background-color: #d1d7e0;
 }
 
+img.img-profile {
+    border: 8px solid white;
+    box-shadow: 16px 14px 20px #0000008c;
+}
+
+img.img-responsive {
+    border: 8px solid #{{ site.color.secondary }};
+    box-shadow: 16px 14px 20px #0000008c;
+}
+
 p {
     font-size: 20px;
 }
@@ -208,6 +218,20 @@ header .intro-text .skills {
             opacity: 0;
         }
     }
+}
+
+img.img-skills{
+
+    width: 10%;
+    height: 10%;
+    padding: 10px;
+}
+
+div.skills-row{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 
@@ -524,6 +548,7 @@ footer .footer-below {
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
+    background-color: #d1d7e0;
 }
 
 .portfolio-modal .modal-content h2 {

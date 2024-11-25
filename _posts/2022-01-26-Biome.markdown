@@ -5,7 +5,15 @@ date: 2022-01-26
 img: biome.png
 alt: image-alt
 project-date: January 2022
-client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+client: School Project
+category: Game prototyping
+description: This project was made during second quarter of the second year at Breda University of Applied Sciences. I primarily worked on gameplay programming and also some minor graphics programming. During this project I prototyped plants growing when the player gets close to them, as well as the behaviour of the enemy flowers. This was the first time I worked with 3D animations with games, and I managed to incorporate it well into the enemy behaviour.
+link: https://tweisal.itch.io/biome
+sections:
+  - header: "Flower Enemy"
+    video: "https://www.youtube.com/watch?v=LwZPjsuCVnU"
+    text: "I worked together with artists to control the animation so that the flower would target the player if they entered a certain range. The light inside the flower is programmatically implemented so that artists can change the settings. The light shines through because of subsurface scattering. This was the first time I worked with enemy behaviour before, so I had some struggles initially, but by testing out the capabilities of Unreal Engine, I discovered how to make it work as designers intended."
+  - header: "Environmental Transformation"
+    video: "https://www.youtube.com/watch?v=nfu8mxhf2jo"
+    text: "I worked on a gameplay system that would allow the player to transform the cursed environment into a flourishing environment. We took inspiration from Kena, for this aspect of the game. I used shader techniques to make the flowers grow and dynamically change colours. I also implemented the gameplay camera transition to give the player a clear view of what is happening. I also added the growing ring to indicate the borders of the transformation and to give it more visual flair."
 ---

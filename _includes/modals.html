@@ -16,9 +16,11 @@
             <h2>{{ post.title }}</h2>
             <hr class="star-primary">
             <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+            
             {% if post.description %}
             <p>{{ post.description }}</p>
             {% endif %}
+            
             <ul class="list-inline item-details">
               {% if post.client %}
               <li>Client:
@@ -36,6 +38,42 @@
               </li>
               {% endif %}
             </ul>
+
+            <!-- Dynamic Sections -->
+            {% if post.sections %}
+            <div class="sections">
+              {% for section in post.sections %}
+              <div class="section">
+                {% if section.header %}
+                <h3>{{ section.header }}</h3>
+                {% endif %}
+                {% if section.video %}
+                <div class="video-container">
+                  <iframe src="{{ section.video | replace: 'watch?v=', 'embed/' }}" frameborder="0" allowfullscreen></iframe>
+                </div>
+                {% endif %}
+                {% if section.text %}
+                <p>{{ section.text }}</p>
+                {% endif %}
+              </div>
+              {% endfor %}
+            </div>
+            {% endif %}
+
+            <!-- Link Section -->
+            {% if post.link %}
+            <div class="link-section">
+              <h4>Related Link</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="{{ post.link }}" target="_blank" rel="noopener">
+                    <i class="fa fa-external-link"></i> Visit Project
+                  </a>
+                </li>
+              </ul>
+            </div>
+            {% endif %}
+            
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
               Close</button>
           </div>

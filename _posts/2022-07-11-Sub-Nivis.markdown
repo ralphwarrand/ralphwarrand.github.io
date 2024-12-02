@@ -1,0 +1,17 @@
+---
+layout: default
+modal-id: 2
+date: 2022-07-11
+img: subnivis.png
+alt: image-alt
+project-date: July 2022
+client: School Project
+category: Game prototyping
+description: This project was the culmination of a lot of preceding work during my second year at BUas. During quarters 1 and 3 we worked on creating our custom engine with a relatively small team, then in quarter 4 we expanded to 16 developers including artists and level designers. The engine is cross platform and runs on both PlayStation 4 and PC. During quarter 4, I was the Product Owner for the project, meaning that I had a lot of control over the direction of the project. I also worked as a gameplay programmer, writing the AI for the base enemies as well as features such as headshots.
+link: https://buas.itch.io/sub-nivis
+sections:
+  - header: "BSP Texturing"
+    video: "https://www.youtube.com/watch?v=tEuP9zs91T8"
+    text: "Our initial goals for our engine were to support BSP maps which is the format used by Quake, as it allowed us to leverage the capabilities of Quake level editors. A teammate of mine set up parsing for BSPs then by looking through old Quake source code and wikis I was able to use the Quake colour palette to correctly parse and load the textures for the environment and map them to the parsed BSP data."
+  - header: "TO BE EXPANDED"
+---

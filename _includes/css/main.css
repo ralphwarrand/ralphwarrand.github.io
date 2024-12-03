@@ -11,7 +11,7 @@ body {
 
 img.img-profile {
     border: 8px solid white;
-    box-shadow: 16px 14px 20px #0000008c;
+    box-shadow: 16px 14px 20px #f5f3f4;
 }
 
 img.img-responsive {
@@ -548,6 +548,7 @@ footer .footer-below {
 .portfolio-modal .modal-body {
     padding: 100px 0;
     min-height: 100%;
+    min-width: 100%;
     border: 0;
     border-radius: 0;
     text-align: left;
@@ -561,6 +562,23 @@ footer .footer-below {
     margin: 0;
     font-size: 3em;
     text-align: center;
+}
+
+.portfolio-modal .modal-content .video-container {
+    position: relative;
+    width: 100%; /* Full width of the parent container */
+    padding-bottom: 56.25%; /* Aspect ratio for 16:9 videos */
+    height: 0; /* Height is handled by padding-bottom */
+    margin: 0 auto; /* Center the video container */
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.portfolio-modal .modal-content .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Match the container height */
 }
 
 .portfolio-modal .modal-content img {

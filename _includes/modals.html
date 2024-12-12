@@ -1,6 +1,6 @@
 <!-- Portfolio Modals -->
 {% for post in site.posts %}
-<div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog"
+<div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id | default: forloop.index }}" tabindex="-1" role="dialog"
   aria-hidden="true">
   <div class="modal-content">
     <div class="close-modal" data-dismiss="modal">
@@ -52,13 +52,18 @@
                   <iframe src="{{ section.video | replace: 'watch?v=', 'embed/' }}" frameborder="0" allowfullscreen></iframe>
                 </div>
                 {% endif %}
+                {% if section.img %}
+                <div class="image-container">
+                  <img src="{{ section.img }}" style="display: block; margin: 0 auto;" alt="{{ section.header }}">
+                </div>
+                {% endif %}
                 {% if section.text %}
                 <p>{{ section.text }}</p>
                 {% endif %}
               </div>
               {% endfor %}
             </div>
-            {% endif %}
+            {% endif %}           
 
             <!-- Link Section -->
             {% if post.link %}

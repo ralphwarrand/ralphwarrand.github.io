@@ -10,11 +10,23 @@ body {
 }
 
 img.img-profile {
-    border: 8px solid white;
-    box-shadow: 16px 14px 20px #f5f3f4;
+    border: 8px solid rgb(255, 255, 255);
+    box-shadow: 6px 6px 8px #7e7e7e;
 }
 
 img.img-responsive {
+    border: 8px solid #{{ site.color.secondary }};
+    box-shadow: 16px 14px 20px #0000008c;
+}
+
+
+.image-container img {
+    border: 8px solid #{{ site.color.secondary }};
+    box-shadow: 4px 4px 7px #0000008c;
+}
+
+
+.video-container iframe{
     border: 8px solid #{{ site.color.secondary }};
     box-shadow: 16px 14px 20px #0000008c;
 }
